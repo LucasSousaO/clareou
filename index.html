@@ -3,8 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clareou — Links</title>
-  <meta name="description" content="Acesse nossos canais: Instagram, WhatsApp, YouTube e Pinterest." />
+  <!-- SEO básico -->
+  <title>Clareou | Links oficiais (WhatsApp, Instagram, YouTube e Pinterest)</title>
+  <meta name="description" content="Acesse os canais oficiais da Clareou: WhatsApp para atendimento, Instagram com novidades, YouTube e Pinterest com inspirações." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://clareou.com/" />
+
+  <!-- Ícones -->
+  <link rel="icon" href="/assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Open Graph (WhatsApp / Facebook) -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Clareou" />
+  <meta property="og:title" content="Clareou | Links oficiais" />
+  <meta property="og:description" content="WhatsApp, Instagram, YouTube e Pinterest da Clareou em um só lugar." />
+  <meta property="og:url" content="https://clareou.com/" />
+  <meta property="og:image" content="https://clareou.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Clareou - Links oficiais" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clareou | Links oficiais" />
+  <meta name="twitter:description" content="Acesse WhatsApp, Instagram, YouTube e Pinterest da Clareou." />
+  <meta name="twitter:image" content="https://clareou.com/og-image.jpg" />
+
+  <!-- Dados estruturados (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Clareou",
+    "url": "https://clareou.com/",
+    "logo": "https://clareou.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/clareoufilmes/",
+      "https://api.whatsapp.com/message/WZPR3VFPLNO6L1?autoload=1&app_absent=0",
+      "https://www.youtube.com/@clareoufestas",
+      "https://br.pinterest.com/clareoufilmes/"
+    ]
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MV0KZHV86M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MV0KZHV86M');
+</script>
   <style>
     :root { --radius: 18px; }
     * { box-sizing: border-box; }
