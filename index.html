@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clareou — Links</title>
+  <meta name="description" content="Acesse nossos canais: Instagram, WhatsApp, YouTube e Pinterest." />
+  <style>
+    :root { --radius: 18px; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #1f1f1f;
+      background: radial-gradient(1200px 600px at 20% 0%, #ffe9ef 0%, #ffffff 55%);
+    }
+    .wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 560px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 24px;
+      box-shadow: 0 10px 35px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      padding: 28px 22px 18px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .logo {
+      width: 56px; height: 56px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ff6ea8, #ffb26a);
+      box-shadow: 0 8px 18px rgba(255,110,168,.25);
+      flex: 0 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.15;
+    }
+    .subtitle {
+      margin: 6px 0 0;
+      color: rgba(0,0,0,.66);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+    .links {
+      padding: 10px 22px 22px;
+      display: grid;
+      gap: 12px;
+    }
+    a.btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(0,0,0,.10);
+      background: #fff;
+      padding: 14px 14px 14px 16px;
+      border-radius: var(--radius);
+      transition: transform .08s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    a.btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(0,0,0,.16);
+      box-shadow: 0 10px 24px rgba(0,0,0,.10);
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    .icon {
+      width: 40px; height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(0,0,0,.04);
+      flex: 0 0 auto;
+    }
+    .text { min-width: 0; }
+    .label {
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .hint {
+      font-size: 12px;
+      color: rgba(0,0,0,.60);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 360px;
+    }
+    .chev {
+      opacity: .55;
+      font-size: 18px;
+      flex: 0 0 auto;
+    }
+    .footer {
+      padding: 14px 22px 20px;
+      border-top: 1px solid rgba(0,0,0,.06);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: rgba(0,0,0,.60);
+      font-size: 12px;
+    }
+    .badge {
+      padding: 6px 10px;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 999px;
+      background: rgba(255,255,255,.7);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-label="Links da Clareou">
+      <div class="hero">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Clareou</h1>
+          <p class="subtitle">Escolha um canal para falar com a gente ou ver nossos conteúdos.</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <!-- Instagram (troque o link abaixo pelo seu) -->
+        <a class="btn" href="https://www.instagram.com/clareoufilmes/" target="_blank" rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon" aria-hidden="true">📷</div>
+            <div class="text">
+              <div class="label">Instagram</div>
+              <div class="hint">Ver novidades e bastidores</div>
+            </div>
+          </div>
+          <div class="chev">›</div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a class="btn" href="https://api.whatsapp.com/message/WZPR3VFPLNO6L1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon" aria-hidden="true">💬</div>
+            <div class="text">
+              <div class="label">WhatsApp</div>
+              <div class="hint">Atendimento rápido e pedidos</div>
+            </div>
+          </div>
+          <div class="chev">›</div>
+        </a>
+
+        <!-- YouTube -->
+        <a class="btn" href="https://www.youtube.com/@clareoufestas" target="_blank" rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon" aria-hidden="true">▶️</div>
+            <div class="text">
+              <div class="label">YouTube</div>
+              <div class="hint">@clareoufestas</div>
+            </div>
+          </div>
+          <div class="chev">›</div>
+        </a>
+
+        <!-- Pinterest -->
+        <a class="btn" href="https://br.pinterest.com/clareoufilmes/" target="_blank" rel="noopener noreferrer">
+          <div class="left">
+            <div class="icon" aria-hidden="true">📌</div>
+            <div class="text">
+              <div class="label">Pinterest</div>
+              <div class="hint">Inspirações e ideias</div>
+            </div>
+          </div>
+          <div class="chev">›</div>
+        </a>
+      </div>
+
+      <div class="footer">
+        <span class="badge">✨ Clareou</span>
+        <span>© <span id="y"></span></span>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
